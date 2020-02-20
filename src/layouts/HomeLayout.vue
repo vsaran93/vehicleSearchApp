@@ -12,12 +12,10 @@ import Vue from 'vue';
 import VueRouter from 'vue-router'
 
 import ListView from '../components/ListViewComponent';
-
-
-const Foo = { template: '<div>foo</div>' }
+import ModelView from '../components/ModelViewComponent';
 
 const routes = [
-  { path: '/foo', component: Foo },
+  { path: '/models/:id/:title', component: ModelView },
   { path: '/', component: ListView }
 ]
 const router = new VueRouter({
