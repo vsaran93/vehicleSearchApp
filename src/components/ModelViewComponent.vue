@@ -3,10 +3,22 @@
        <Header />
        <div>
             <v-container class="grey lighten-5">
-                <h4>Models of {{this.brand}}</h4>
-                <div class="grey lighten-5">
-                    <span><router-link to="/">View Brands</router-link></span>
-                </div>
+                <v-row>
+                    <v-col
+                        cols="12"
+                        md="8"
+                    >
+                        <h4>Models of {{this.brand}}</h4>
+                    </v-col>
+                    <v-col
+                        cols="6"
+                        md="4"
+                    >
+                        <div class="grey lighten-5">
+                            <span><router-link to="/">Back to Brands</router-link></span>
+                        </div>
+                    </v-col>
+                </v-row>
             </v-container>
            <v-container class="grey lighten-5">
                 <v-row>
